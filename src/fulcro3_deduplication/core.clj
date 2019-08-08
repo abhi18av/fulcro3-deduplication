@@ -67,10 +67,14 @@
    (clojure.string/split (.toString (:file (first all-defs-final))) #":")))
 
 ;;;;;;;
-
+;; FIXME needs calibration for actual path of fulcro src
+;; TODO refactor
 (defn get-file-name [a-java-net-url-object]
-  (second
-   (clojure.string/split (.toString (:file a-java-net-url-object)) #":")))
+  (clojure.string/join "/"
+                       (drop-while #(not= "src" %)
+                                   (clojure.string/split
+                                    (second
+                                     (clojure.string/split (.toString (:file a-java-net-url-object)) #":")) #"/"))))
 
 (comment
   (get-file-name (first all-defs-final)))
