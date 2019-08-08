@@ -6,9 +6,5 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [clj-commons/multigrep "0.5.0"]
                  [org.apache.commons/commons-text "1.1"]
-                 ;; experiments
-                 [zcaudate/hara "2.8.7"]
-                 [org.clojure/clojurescript "1.10.520"]
-                 [com.fulcrologic/fulcro "3.0.0-alpha-21"]
-                 [org.clojure/tools.reader "1.3.2"]]
+                 [zcaudate/hara "2.8.7"]]
   :repl-options {:init-ns fulcro3-deduplication.core})

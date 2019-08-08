@@ -1,0 +1,311 @@
+(["merge-alternate-union-elements"
+  [{:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge-alternate-union-elements",
+    :line "(defn merge-alternate-union-elements",
+    :line-number 497}
+   {:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge-alternate-union-elements",
+    :line "(defn merge-alternate-union-elements!",
+    :line-number 508}]]
+ ["create-element"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "create-element",
+    :line "(defn create-element",
+    :line-number 70}
+   {:file-name "src/fulcro/components.cljc",
+    :function-name "create-element",
+    :line "(defn create-element",
+    :line-number 566}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "create-element",
+    :line "(defn create-element",
+    :line-number 439}]]
+ ["arr-append"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "arr-append",
+    :line "(defn- arr-append* [arr x]",
+    :line-number 176}
+   {:file-name "src/fulcro/dom.cljs",
+    :function-name "arr-append",
+    :line "(defn- arr-append [arr tail]",
+    :line-number 180}]]
+ ["target-value"
+  [{:file-name "src/fulcro/mutations.cljc",
+    :function-name "target-value",
+    :line "(defn target-value [evt] (.. evt -target -value))",
+    :line-number 203}
+   {:file-name "src/fulcro/dom/events.cljc",
+    :function-name "target-value",
+    :line "(defn target-value",
+    :line-number 12}]]
+ ["merge-component"
+  [{:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge-component",
+    :line "(defn merge-component",
+    :line-number 422}
+   {:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge-component",
+    :line "(defn merge-component!",
+    :line-number 458}]]
+ ["remove-ident"
+  [{:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "remove-ident",
+    :line "(defn remove-ident*",
+    :line-number 13}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "remove-ident",
+    :line "(>defn remove-ident",
+    :line-number 491}]]
+ ["load"
+  [{:file-name "src/fulcro/data_fetch.cljc",
+    :function-name "load",
+    :line "(defn load!",
+    :line-number 188}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "load",
+    :line "(>defn load",
+    :line-number 1016}]]
+ ["multiple-targets"
+  [{:file-name "src/fulcro/algorithms/data_targeting.cljc",
+    :function-name "multiple-targets",
+    :line "(>defn multiple-targets",
+    :line-number 12}
+   {:file-name "src/fulcro/algorithms/data_targeting.cljc",
+    :function-name "multiple-targets",
+    :line
+    "(>defn multiple-targets? [t] [any? => boolean?] (-> t meta ::multiple-targets boolean))",
+    :line-number 52}]]
+ ["mounted"
+  [{:file-name "src/fulcro/application.cljc",
+    :function-name "mounted",
+    :line "(>defn mounted?",
+    :line-number 328}
+   {:file-name "src/fulcro/components.cljc",
+    :function-name "mounted",
+    :line "(defn mounted? [this]",
+    :line-number 368}]]
+ ["index-query"
+  [{:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "index-query",
+    :line "(defn- index-query*",
+    :line-number 13}
+   {:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "index-query",
+    :line "(defn index-query",
+    :line-number 32}]]
+ ["fulcro-app"
+  [{:file-name "src/fulcro/application.cljc",
+    :function-name "fulcro-app",
+    :line "(defn fulcro-app",
+    :line-number 210}
+   {:file-name "src/fulcro/application.cljc",
+    :function-name "fulcro-app",
+    :line "(>defn fulcro-app?",
+    :line-number 321}
+   {:file-name "src/fulcro/components.cljc",
+    :function-name "fulcro-app",
+    :line
+    "(defn fulcro-app? [x] (and (map? x) (contains? x :com.fulcrologic.fulcro.application/state-atom)))",
+    :line-number 172}]]
+ ["deep-merge"
+  [{:file-name "src/fulcro/inspect/diff.cljc",
+    :function-name "deep-merge",
+    :line "(defn deep-merge [x y]",
+    :line-number 35}
+   {:file-name "src/fulcro/algorithms/misc.cljc",
+    :function-name "deep-merge",
+    :line "(defn deep-merge [& xs]",
+    :line-number 69}]]
+ ["current-route"
+  [{:file-name "src/fulcro/routing/legacy_ui_routers.cljc",
+    :function-name "current-route",
+    :line "(defn current-route",
+    :line-number 103}
+   {:file-name "src/fulcro/routing/dynamic_routing.cljc",
+    :function-name "current-route",
+    :line "(defn current-route",
+    :line-number 426}]]
+ ["element"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "element",
+    :line
+    "(defn element? \"Returns true if the given arg is a react element.\"",
+    :line-number 35}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "element",
+    :line "(defn element?",
+    :line-number 30}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "element",
+    :line "(defn element",
+    :line-number 207}]]
+ ["integrate-ident"
+  [{:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "integrate-ident",
+    :line "(defn integrate-ident*",
+    :line-number 22}
+   {:file-name "src/fulcro/algorithms/data_targeting.cljc",
+    :function-name "integrate-ident",
+    :line "(>defn integrate-ident",
+    :line-number 61}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "integrate-ident",
+    :line "(>defn integrate-ident",
+    :line-number 464}]]
+ ["set-value"
+  [{:file-name "src/fulcro/mutations.cljc",
+    :function-name "set-value",
+    :line "(defn set-value!",
+    :line-number 186}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "set-value",
+    :line "(defn set-value!",
+    :line-number 773}]]
+ ["route-target"
+  [{:file-name "src/fulcro/routing/dynamic_routing.cljc",
+    :function-name "route-target",
+    :line
+    "(defn route-target? [component] (comp/component-options component :route-segment))",
+    :line-number 47}
+   {:file-name "src/fulcro/routing/dynamic_routing.cljc",
+    :function-name "route-target",
+    :line "(defn route-target",
+    :line-number 144}]]
+ ["set-string"
+  [{:file-name "src/fulcro/mutations.cljc",
+    :function-name "set-string",
+    :line "(defn set-string!",
+    :line-number 232}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "set-string",
+    :line "(defn set-string!",
+    :line-number 756}]]
+ ["macro-create-element"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "macro-create-element",
+    :line "(defn macro-create-element*",
+    :line-number 94}
+   {:file-name "src/fulcro/dom.cljs",
+    :function-name "macro-create-element",
+    :line "(defn macro-create-element",
+    :line-number 197}]]
+ ["set-query"
+  [{:file-name "src/fulcro/components.cljc",
+    :function-name "set-query",
+    :line "(defn set-query*",
+    :line-number 720}
+   {:file-name "src/fulcro/components.cljc",
+    :function-name "set-query",
+    :line "(defn set-query!",
+    :line-number 745}]]
+ ["render-component"
+  [{:file-name "src/fulcro/rendering/ident_optimized_render.cljc",
+    :function-name "render-component",
+    :line "(defn render-component!",
+    :line-number 28}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "render-component",
+    :line "(defn- render-component [c]",
+    :line-number 201}]]
+ ["index-component"
+  [{:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "index-component",
+    :line "(defn- index-component* [runtime-state instance ident cls]",
+    :line-number 74}
+   {:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "index-component",
+    :line "(defn index-component!",
+    :line-number 86}]]
+ ["drop-component"
+  [{:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "drop-component",
+    :line "(defn- drop-component*",
+    :line-number 106}
+   {:file-name "src/fulcro/algorithms/indexing.cljc",
+    :function-name "drop-component",
+    :line "(defn drop-component!",
+    :line-number 116}]]
+ ["render"
+  [{:file-name "src/fulcro/application.cljc",
+    :function-name "render",
+    :line "(>defn render!",
+    :line-number 84}
+   {:file-name "src/fulcro/dom.cljs",
+    :function-name "render",
+    :line "(defn render",
+    :line-number 53}
+   {:file-name "src/fulcro/rendering/keyframe_render.cljc",
+    :function-name "render",
+    :line "(defn render!",
+    :line-number 8}
+   {:file-name "src/fulcro/rendering/ident_optimized_render.cljc",
+    :function-name "render",
+    :line "(defn render!",
+    :line-number 132}]]
+ ["render-to-str"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "render-to-str",
+    :line "(defn render-to-str",
+    :line-number 58}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "render-to-str",
+    :line "(defn- render-to-str* ^StringBuilder [x]",
+    :line-number 372}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "render-to-str",
+    :line "(defn render-to-str ^String [x]",
+    :line-number 427}]]
+ ["resolve-tempids"
+  [{:file-name "src/fulcro/algorithms/tempid.cljc",
+    :function-name "resolve-tempids",
+    :line "(defn resolve-tempids",
+    :line-number 74}
+   {:file-name "src/fulcro/algorithms/tempid.cljc",
+    :function-name "resolve-tempids",
+    :line "(defn resolve-tempids!",
+    :line-number 87}]]
+ ["trigger"
+  [{:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "trigger",
+    :line "(defn trigger!",
+    :line-number 126}
+   {:file-name "src/fulcro/ui_state_machines.cljc",
+    :function-name "trigger",
+    :line "(>defn trigger",
+    :line-number 738}]]
+ ["write"
+  [{:file-name "src/fulcro/inspect/transit.cljs",
+    :function-name "write",
+    :line "(defn write [x]",
+    :line-number 28}
+   {:file-name "src/fulcro/server/api_middleware.clj",
+    :function-name "write",
+    :line "(defn- write [x t opts]",
+    :line-number 147}]]
+ ["merge"
+  [{:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge",
+    :line "(defn merge*",
+    :line-number 330}
+   {:file-name "src/fulcro/algorithms/merge.cljc",
+    :function-name "merge",
+    :line "(defn merge!",
+    :line-number 397}]]
+ ["add-form-config"
+  [{:file-name "src/fulcro/algorithms/form_state.cljc",
+    :function-name "add-form-config",
+    :line "(>defn add-form-config",
+    :line-number 110}
+   {:file-name "src/fulcro/algorithms/form_state.cljc",
+    :function-name "add-form-config",
+    :line "(>defn add-form-config*",
+    :line-number 163}]]
+ ["node"
+  [{:file-name "src/fulcro/dom.cljs",
+    :function-name "node",
+    :line "(defn node",
+    :line-number 63}
+   {:file-name "src/fulcro/dom_server.clj",
+    :function-name "node",
+    :line "(defn node",
+    :line-number 432}]])
