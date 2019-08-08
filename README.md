@@ -1,14 +1,18 @@
 # fulcro3-deduplication
 
-A Clojure library designed to ... well, that part is up to you.
+- This is a small program to take care of identifying the duplicated `defn` and it's variations within the `fulcro` codebase.
 
-## Usage
+```
+$ git grep defn.*integrate-ident
+src/main/com/fulcrologic/fulcro/algorithms/data_targeting.cljc:(>defn integrate-ident
+src/main/com/fulcrologic/fulcro/algorithms/merge.cljc:(defn integrate-ident*
+src/main/com/fulcrologic/fulcro/ui_state_machines.cljc:(>defn integrate-ident
+```
 
-FIXME
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Abhinav Sharma (@abhi18av)
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
