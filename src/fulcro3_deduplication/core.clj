@@ -101,7 +101,8 @@
 ;;;;;;;
 ;; FIXME needs calibration for actual path of fulcro src
 ;; TODO refactor
-(defn get-file-name [a-java-net-url-object]
+
+(defn get-fulcro-src-file-name [a-java-net-url-object]
   (clojure.string/join "/"
                        (drop-while #(not= "src" %)
                                    (clojure.string/split
@@ -109,7 +110,7 @@
                                      (clojure.string/split (.toString (:file a-java-net-url-object)) #":")) #"/"))))
 
 (comment
-  (get-file-name (first all-defs-final)))
+  (get-fulcro-src-file-name (first all-defs-final)))
 
 ;;;;;;;
 ;; NOTE need to normalize for < */?/! >
@@ -135,6 +136,7 @@
       false)))
 
 (comment
+  (are-similar-strings? "integrate-ident" "integrate-ident-abcd")
   (are-similar-strings? "integrate-ident" "integrate-ident?")
   (are-similar-strings? "integrate-ident" "integrate-ident!")
   (are-similar-strings? "integrate-ident" "integrate-ident*"))
@@ -144,15 +146,18 @@
 (def all-unique-function-names
   (apply hash-set (map get-normalized-function-name all-defs-final)))
 
-;;;;;;;
+(comment
+  (first all-unique-function-names)
+  (count all-unique-function-names))
 
-;; TODO filter the possible duplicates
+;;;;;;;
 
 (doseq [keyval all-defs-final]
   (println keyval)
   #_(println (:line keyval)))
 
+(zipmap (map keyword all-unique-function-names) (repeat (count all-unique-function-names) nil))
+
 (comment
   (zipmap [:a :b :c] (repeat 3 nil)))
 
-(zipmap (map keyword all-unique-function-names) (repeat (count all-unique-function-names) nil))
