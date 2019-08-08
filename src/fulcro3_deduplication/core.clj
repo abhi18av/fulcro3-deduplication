@@ -1,4 +1,5 @@
 (ns fulcro3-deduplication.core
+  (:import [org.apache.commons.text.similarity JaroWinklerDistance])
   (:require [clojure.java.io :as io]
             [multigrep.core  :as mgrep]))
 
@@ -35,6 +36,7 @@
 
 ;; DONE drop the hashmaps which are not function defs
 
+
 (defn is-function-def? [a-hashmap]
   (let [result (some #(re-matches #"\(defn||\(defn-||\(>defn||\(gw\/>defn" %)
                      (take 2
@@ -52,7 +54,37 @@
 
 ;;;;;;;;
 
+
 (def all-defs-final
   (filter (fn [a-hashmap]
             (is-function-def? a-hashmap)) all-defs))
+
+(comment
+  (type
+   (:file (first all-defs-final)))
+
+  (second
+   (clojure.string/split (.toString (:file (first all-defs-final))) #":")))
+
+;;;;;;;
+
+(defn get-file-name [a-java-net-url-object]
+  (second
+   (clojure.string/split (.toString (:file a-java-net-url-object)) #":")))
+
+(comment
+  (get-file-name (first all-defs-final)))
+
+;;;;;;;
+
+(defn are-similar-strings? [str-1 str-2]
+  (let [score (.apply (JaroWinklerDistance.) str-1 str-2)]
+    (if (> score 0.94)
+      true
+      false)))
+
+(comment
+  (are-similar-strings? "integrate-ident" "integrate-ident*"))
+
+;;;;;;;
 
