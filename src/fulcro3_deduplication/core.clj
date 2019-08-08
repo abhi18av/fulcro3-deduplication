@@ -79,6 +79,17 @@
 
 ;;;;;;;
 
+(defn get-normalized-function-name [a-java-net-url-object]
+  (first
+   (clojure.string/split
+    (second
+     (clojure.string/split (:line a-java-net-url-object) #" ")) #"\*")))
+
+(comment
+  (get-normalized-function-name (first all-defs-final)))
+
+;;;;;;;
+
 (defn are-similar-strings? [str-1 str-2]
   (let [score (.apply (JaroWinklerDistance.) str-1 str-2)]
     (if (> score 0.94)
@@ -89,7 +100,20 @@
   (are-similar-strings? "integrate-ident" "integrate-ident*"))
 
 ;;;;;;;
+(def all-function-names
+  (map get-normalized-function-name all-defs-final))
+
+(def all-unique-function-names
+  (apply hash-set all-function-names))
+
+;;;;;;;
 
 ;; TODO filter the possible duplicates
+
+(doseq [keyval all-defs-final]
+  (println (:line keyval)))
+
+
+
 
 
