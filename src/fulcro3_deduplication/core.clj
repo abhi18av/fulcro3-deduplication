@@ -4,7 +4,6 @@
             [multigrep.core  :as mgrep]))
 
 ;;;;;;;;
-
 (def fulcro3-src-file-paths
   (let [fulcro3-src "./src/fulcro"
         file-extension-matcher (.getPathMatcher
@@ -33,7 +32,6 @@
 
 
 ;;;;;;;;
-
 ;; DONE drop the hashmaps which are not function defs
 
 
@@ -60,9 +58,9 @@
             (is-function-def? a-hashmap)) all-defs))
 
 (comment
+  (first all-defs-final)
   (type
    (:file (first all-defs-final)))
-
   (second
    (clojure.string/split (.toString (:file (first all-defs-final))) #":")))
 
@@ -91,4 +89,7 @@
   (are-similar-strings? "integrate-ident" "integrate-ident*"))
 
 ;;;;;;;
+
+;; TODO filter the possible duplicates
+
 
