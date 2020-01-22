@@ -1,5 +1,8 @@
 # fulcro3-deduplication
 
+For the result please refer 
+https://github.com/fulcro-legacy/fulcro3/issues/43#issuecomment-519632448  
+
 - This is a small program to take care of identifying the duplicated `defn` and it's variations within the `fulcro` codebase.
 
 ```
